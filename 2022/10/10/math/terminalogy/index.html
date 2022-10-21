@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="monotone函數 f 是單調的，如果只要 x ≤ y ，則 f(x) ≤ f(y) 。因此單調函數保持次序關係。 credit deomominator as zero分母為 0 時，等於 ∞ credit 機率密度函數 Probability density function在數學中，連續型隨機變數的機率密度函數（Probability density function，簡寫作PDF），在不">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Terminalogy">
+<meta property="og:url" content="http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/index.html">
+<meta property="og:site_name" content="Claire in Germany">
+<meta property="og:description" content="monotone函數 f 是單調的，如果只要 x ≤ y ，則 f(x) ≤ f(y) 。因此單調函數保持次序關係。 credit deomominator as zero分母為 0 時，等於 ∞ credit 機率密度函數 Probability density function在數學中，連續型隨機變數的機率密度函數（Probability density function，簡寫作PDF），在不">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://kuan-yu-lin.github.io/images/525px-Boxplot_vs_PDF.svg.png">
+<meta property="og:image" content="http://kuan-yu-lin.github.io/images/330px-Tangent_to_a_curve.svg.png">
+<meta property="article:published_time" content="2022-10-10T13:22:43.000Z">
+<meta property="article:modified_time" content="2022-10-21T20:57:36.991Z">
+<meta property="article:author" content="Claire Lin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://kuan-yu-lin.github.io/images/525px-Boxplot_vs_PDF.svg.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Terminalogy</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/kuan-yu-lin?tab=repositories">Projects</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/10/11/math/argmax/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/10/07/math/iff/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&text=Terminalogy"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&is_video=false&description=Terminalogy"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Terminalogy&body=Check out this article: http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&name=Terminalogy&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&t=Terminalogy"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#monotone"><span class="toc-number">1.</span> <span class="toc-text">monotone</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deomominator-as-zero"><span class="toc-number">2.</span> <span class="toc-text">deomominator as zero</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A9%9F%E7%8E%87%E5%AF%86%E5%BA%A6%E5%87%BD%E6%95%B8-Probability-density-function"><span class="toc-number">3.</span> <span class="toc-text">機率密度函數 Probability density function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%AF%E7%A9%8D%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B8-Cumulative-Distribution-Function"><span class="toc-number">4.</span> <span class="toc-text">累積分布函數 Cumulative Distribution Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#derivative-%E5%B0%8E%E6%95%B8"><span class="toc-number">5.</span> <span class="toc-text">derivative 導數</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Frequentist-vs-Baysian"><span class="toc-number">6.</span> <span class="toc-text">Frequentist vs. Baysian</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toy-samples"><span class="toc-number">7.</span> <span class="toc-text">toy samples</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Terminalogy
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Claire Lin</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-10-10T13:22:43.000Z" itemprop="datePublished">10-10-2022</time>
+        
+      
+    </div>
+
+
+      
+    <div class="article-category">
+        <i class="fas fa-archive"></i>
+        <a class="category-link" href="/categories/%E6%95%B8%E5%AD%B8/">數學</a>
+    </div>
+
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h3 id="monotone"><a href="#monotone" class="headerlink" title="monotone"></a>monotone</h3><p>函數 f 是單調的，如果只要 x ≤ y ，則 f(x) ≤ f(y) 。因此單調函數保持次序關係。</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8D%95%E8%B0%83%E5%87%BD%E6%95%B0">credit</a></p>
+<h3 id="deomominator-as-zero"><a href="#deomominator-as-zero" class="headerlink" title="deomominator as zero"></a>deomominator as zero</h3><p>分母為 0 時，等於 ∞</p>
+<p><a target="_blank" rel="noopener" href="https://moptt.tw/p/WomenTalk.M.1547306278.A.BCE">credit</a></p>
+<h3 id="機率密度函數-Probability-density-function"><a href="#機率密度函數-Probability-density-function" class="headerlink" title="機率密度函數 Probability density function"></a>機率密度函數 Probability density function</h3><p>在數學中，連續型隨機變數的機率密度函數（Probability density function，簡寫作PDF），在不致於混淆時可簡稱為密度函數，是一個描述這個隨機變數的輸出值，在某個確定的取值點附近的可能性的函數。下圖中，橫軸為隨機變數的取值，縱軸為機率密度函數的值，而隨機變數的取值落在某個區域內的機率為機率密度函數在這個區域上的積分。當機率密度函數存在的時候，累積分布函數是機率密度函數的積分。</p>
+<p><img src="/images/525px-Boxplot_vs_PDF.svg.png" alt="pdf example"></p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E6%A9%9F%E7%8E%87%E5%AF%86%E5%BA%A6%E5%87%BD%E6%95%B8">credit</a></p>
+<h3 id="累積分布函數-Cumulative-Distribution-Function"><a href="#累積分布函數-Cumulative-Distribution-Function" class="headerlink" title="累積分布函數 Cumulative Distribution Function"></a>累積分布函數 Cumulative Distribution Function</h3><p>累積分布函數（Cumulative Distribution Function、CDF），又叫分布函數，是機率密度函數的積分，能完整描述一個實隨機變數X的機率分布。</p>
+<p>rules:</p>
+<ul>
+<li>有界性：</li>
+</ul>
+<p>$\lim_{x\to -\infty }F_{X}(x)&#x3D;0$</p>
+<p>$\lim_{x\to +\infty }F_{X}(x)&#x3D;1$</p>
+<ul>
+<li>單調性：</li>
+</ul>
+<p>$F_{X}(x_{1})\leq F_{X}(x_{2})$, if $x_{1}&lt;x_{2}$</p>
+<ul>
+<li>右連續性：</li>
+</ul>
+<p>$\lim_{x\rightarrow x_{0}^{+}}F_{X}(x)&#x3D;F_{X}(x_{0})$</p>
+<ul>
+<li>X之值落在一區間(a,b]之內的機率為</li>
+</ul>
+<p>$\operatorname {P} (a&lt;X\leq b)&#x3D;F_{X}(b)-F_{X}(a)$</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E7%B4%AF%E7%A7%AF%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B0">credit</a></p>
+<h3 id="derivative-導數"><a href="#derivative-導數" class="headerlink" title="derivative 導數"></a>derivative 導數</h3><p>導數（英語：derivative）是微積分學中的一個概念。函數在某一點的導數是指這個函數在這一點附近的變化率。導數的本質是通過極限的概念對函數進行局部的線性逼近。當函數 $f$ 的自變數在一點 $x_{0}$ 上產生一個增量 $h$ 時，函數輸出值的增量與自變數增量 $h$ 的比值在 $h$ 趨於0時的極限如果存在，即為 $f$ 在 $x_{0}$ 處的導數，記作 $f’(x_0)$ 、$\frac{\mathrm{d}f}{\mathrm{d}x}(x_0)$ 或 $\left.\frac{\mathrm{d}f}{\mathrm{d}x}\right|_{x&#x3D;x_0}$ 。例如在運動學中，物體的位移對於時間的導數就是物體的瞬時速度。</p>
+<p>導數是函數的局部性質。不是所有的函數都有導數，一個函數也不一定在所有的點上都有導數。若某函數在某一點導數存在，則稱其在這一點可導(可微分)，否則稱為不可導(不可微分)。如果函數的自變數和取值都是實數的話，那麼函數在某一點的導數就是該函數所代表的曲線在這一點上的切線斜率，如下圖。</p>
+<p><img src="/images/330px-Tangent_to_a_curve.svg.png" alt="derivative example"></p>
+<h3 id="Frequentist-vs-Baysian"><a href="#Frequentist-vs-Baysian" class="headerlink" title="Frequentist vs. Baysian"></a>Frequentist vs. Baysian</h3><p>Frequentist 古典統計<br>Baysian 貝式統計</p>
+<p><a target="_blank" rel="noopener" href="http://statssc.blogspot.com/2018/07/frequentist-bayesian.html">credit</a></p>
+<h3 id="toy-samples"><a href="#toy-samples" class="headerlink" title="toy samples"></a>toy samples</h3><p>the samples with small numbers to easily show the calculation process of a function or theory</p>
+<p><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-tw/%E5%AF%BC%E6%95%B0">credit</a></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="https://github.com/kuan-yu-lin?tab=repositories">Projects</a></li>
+         
+          <li><a href="/categories/">Category</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#monotone"><span class="toc-number">1.</span> <span class="toc-text">monotone</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deomominator-as-zero"><span class="toc-number">2.</span> <span class="toc-text">deomominator as zero</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A9%9F%E7%8E%87%E5%AF%86%E5%BA%A6%E5%87%BD%E6%95%B8-Probability-density-function"><span class="toc-number">3.</span> <span class="toc-text">機率密度函數 Probability density function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B4%AF%E7%A9%8D%E5%88%86%E5%B8%83%E5%87%BD%E6%95%B8-Cumulative-Distribution-Function"><span class="toc-number">4.</span> <span class="toc-text">累積分布函數 Cumulative Distribution Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#derivative-%E5%B0%8E%E6%95%B8"><span class="toc-number">5.</span> <span class="toc-text">derivative 導數</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Frequentist-vs-Baysian"><span class="toc-number">6.</span> <span class="toc-text">Frequentist vs. Baysian</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toy-samples"><span class="toc-number">7.</span> <span class="toc-text">toy samples</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&text=Terminalogy"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&is_video=false&description=Terminalogy"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Terminalogy&body=Check out this article: http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&title=Terminalogy"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&name=Terminalogy&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://kuan-yu-lin.github.io/2022/10/10/math/terminalogy/&t=Terminalogy"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2016-2022
+    Claire Lin
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="https://github.com/kuan-yu-lin?tab=repositories">Projects</a></li><!--
+     --><!--
+       --><li><a href="/categories/">Category</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
